@@ -2,7 +2,7 @@
     "version": 8,
     "configurePresets": [
         {
-            "name": "GCC 15.1.0 x86_64-w64-mingw32 (mingw64)",
+            "name": "debug_mingw",
             "displayName": "GCC 15.1.0 x86_64-w64-mingw32 (mingw64)",
             "description": "Using compilers: C = D:\\ProgKits\\msys2\\mingw64\\bin\\gcc.exe, CXX = D:\\ProgKits\\msys2\\mingw64\\bin\\g++.exe",
             "generator": "MinGW Makefiles",
@@ -11,8 +11,19 @@
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
                 "CMAKE_C_COMPILER": "D:/ProgKits/msys2/mingw64/bin/gcc.exe",
                 "CMAKE_CXX_COMPILER": "D:/ProgKits/msys2/mingw64/bin/g++.exe",
-                "CMAKE_BUILD_TYPE": "Debug"
-            }
-        }
+                "CMAKE_BUILD_TYPE": "Debug"            }
+        },
+        {
+            "name": "release_mingw",
+            "displayName": "G++ 15.1.0 x86_64-w64-mingw32 (mingw64)",
+            "description": "Using compilers: C = D:\\ProgKits\\msys2\\mingw64\\bin\\g++.exe, CXX = D:\\ProgKits\\msys2\\mingw64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "D:/ProgKits/msys2/mingw64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/ProgKits/msys2/mingw64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Release"            }
+        }        
     ]
 }

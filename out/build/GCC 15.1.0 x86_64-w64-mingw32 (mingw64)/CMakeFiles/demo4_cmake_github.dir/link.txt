@@ -1,3 +1,0 @@
-D:\ProgKits\msys2\mingw64\bin\cmake.exe -E rm -f CMakeFiles\demo4_cmake_github.dir/objects.a
-D:\ProgKits\msys2\mingw64\bin\ar.exe qc CMakeFiles\demo4_cmake_github.dir/objects.a @CMakeFiles\demo4_cmake_github.dir\objects1.rsp
-D:\ProgKits\msys2\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\demo4_cmake_github.dir/objects.a -Wl,--no-whole-archive -o demo4_cmake_github.exe -Wl,--out-implib,libdemo4_cmake_github.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\demo4_cmake_github.dir\linkLibs.rsp
